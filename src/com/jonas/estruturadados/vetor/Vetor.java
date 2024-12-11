@@ -50,12 +50,22 @@ public class Vetor {
         return this.tamanho;
     }
 
-    public String busca(int posicao) {
+    // public String busca(int posicao) {
 
-        if (!(posicao >= 0 && posicao < this.tamanho)) {
-            throw new IllegalArgumentException("Posição inválida.");
+    // if (!(posicao >= 0 && posicao < this.tamanho)) {
+    // throw new IllegalArgumentException("Posição inválida.");
+    // }
+    // return this.elementos[posicao];
+    // }
+
+    // algoritmo de busca sequencial
+    public int busca(String elemento) {
+        for (int i = 0; i < this.tamanho; i++) {
+            if (this.elementos[i].equals(elemento)) {
+                return i;
+            }
         }
-        return this.elementos[posicao];
+        return -1;
     }
 
     @Override
