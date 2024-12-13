@@ -84,8 +84,7 @@ public class Vetor {
         this.tamanho--;
     }
 
-    // 0 1 2 3 4 5 6 = tamanho é 5
-    // B C E F G + +
+    // algoritmo de inserção
     public boolean adiciona(int posicao, String elemento) {
 
         if (!(posicao >= 0 && posicao < this.tamanho)) {
