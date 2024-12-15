@@ -27,6 +27,17 @@ public class Lista<T> {
         return this.tamanho;
     }
 
+    public T obtem(int posicao) {
+        return this.busca(posicao);
+    }
+
+    public T busca(int posicao) {
+        if (!(posicao >= 0 && posicao < this.tamanho)) {
+            throw new IllegalArgumentException("Posição inválida.");
+        }
+        return this.elementos[posicao];
+    }
+
     // algoritmo de busca sequencial
     public int busca(T elemento) {
         for (int i = 0; i < this.tamanho; i++) {
