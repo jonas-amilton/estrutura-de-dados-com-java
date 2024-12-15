@@ -1,7 +1,5 @@
 package com.jonas.estruturadados.vetor;
 
-import java.lang.reflect.Array;
-
 public class Lista<T> {
     private T[] elementos;
     private int tamanho;
