@@ -84,6 +84,14 @@ public class Lista<T> {
         this.tamanho--;
     }
 
+    public void remove(T elemento) {
+        int pos = this.busca(elemento);
+
+        if (pos > -1) {
+            this.remove(pos);
+        }
+    }
+
     // algoritmo de inserção
     public boolean adiciona(int posicao, T elemento) {
 
