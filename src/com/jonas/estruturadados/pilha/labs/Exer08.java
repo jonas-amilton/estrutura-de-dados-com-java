@@ -11,7 +11,7 @@ public class Exer08 {
 
         // Torre de Hanói
         // comportamento de LIFO - Last In First Out
-        // primeiro a ser adicionado é o último a ser retirado
+        // o último a ser adicionado é o primeiro a ser retirado
         original.push(3);
         original.push(2);
         original.push(1);
