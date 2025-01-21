@@ -7,9 +7,16 @@ public class ListaEncadeadaTeste {
         ListaEncadeada<Integer> lista = new ListaEncadeada<>();
 
         lista.adiciona(1);
-        lista.adiciona(2);
 
         System.out.println(lista.getTamanho());
+        System.out.println(lista);
+
+        lista.adiciona(2);
+
+        System.out.println(lista);
+
+        lista.adiciona(3);
+
         System.out.println(lista);
     }
 }
